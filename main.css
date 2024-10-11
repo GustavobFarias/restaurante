@@ -19,7 +19,8 @@ body {
 }
 
 .navbar-brand {
-    font-family: "Pacifico", cursive;   
+    font-family: "Pacifico", cursive;
+    font-size: 32px;   
 }
 
 .section-title {
@@ -31,8 +32,16 @@ body {
     background-color: #ffeae6;
 }
 
+#eventos, #fale-conosco {
+    background-color: #ffd7cf;
+}
+
 .text-colored {
     color: #e15f41;
+}
+
+.text-color-black {
+    color: black;
 }
 
 .nav-cardapio .nav-link.active,
@@ -53,8 +62,21 @@ body {
     text-decoration: none;
 } 
 
+.animation:hover {
+    transition: all ease .5s;
+    transform: scale(1.05);
+}
+
 @media screen and (max-width: 767px) {
     .carousel-item img {
         height: 280px;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav .nav-link {
+        width: 100%;
     }
 }
